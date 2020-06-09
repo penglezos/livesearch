@@ -1,6 +1,4 @@
 <?php
-	require_once("connection.php");
-	
 	$key = $_GET["key"];
 	$query = "SELECT * FROM products WHERE products_name LIKE '%$key%' LIMIT 5";
 	$res = mysqli_query($connection, $query);
